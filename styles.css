@@ -39,3 +39,19 @@ body {
     }
   }
 }
+
+.hexagon::before {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  border-radius: 50%;
+  width: 100%;
+  height: 60px;
+  background: #000;
+  transition: 0.5s;
+}
+
+.hexagon:hover::before {
+  opacity: 0.8;
+  transform: scale(0.8);
+}
